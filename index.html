@@ -1,0 +1,69 @@
+<html>
+    <head>
+
+       <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/index_style.css">
+
+    </head>
+    <body>
+
+    
+ 
+<h1 class="text-primary text-center my-5">Our Products</h1>
+
+
+<div class="container">
+
+
+  <div class="form-group">
+    <label>Product Name : </label>
+    <input class="form-control " id="pname">
+  </div>
+  
+
+  <div class="form-group">
+    <label>Product Price : </label>
+    <input class="form-control" id="pprice">
+  </div>
+  
+
+  <div class="form-group">
+    <label>Product Category : </label>
+    <input class="form-control" id="pcat">
+  </div>
+  
+
+  <div class="form-group">
+    <label>Product Description : </label>
+    <textarea class="form-control" id="pdec"></textarea>
+  </div>
+  
+
+  <button id="mainbtn" onclick="addProduct()" class="btn btn-primary">Add product</button>
+
+  <input onkeyup="searchProduct(this.value)" class= "form-control my-5 mx-auto w-25 " placeholder="Search"> 
+
+
+  <table class="table container">
+    <thead>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Catagory</th>
+      <th>Description</th>
+      <th>Delete</th>
+      <th>Update</th>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+
+
+
+
+ <script src="js/main.js"></script>
+
+    </body>
+</html>
+
+
+
